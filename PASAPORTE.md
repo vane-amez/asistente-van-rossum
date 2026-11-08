@@ -1,3 +1,5 @@
+## Semana 1:
+
 Asistente Van Rossum
 Un asistente de conocimiento para resolver las dudas del entrenamiento del clan Van Rossum.
 
@@ -30,3 +32,20 @@ Lo dice claramente: «No encuentro eso en la información del clan».
 Ejemplos para probarlo
 Dentro del alcance «¿Cuándo es la próxima entrega?»
 Fuera del alcance «¿Qué nota voy a sacar?» o «¿Puedo entregar tarde?». 
+
+## Semana 2:
+
+Límites del modelo y cómo los cubre el asistente
+
+| Límite | Cómo se cubre |
+
+Puede alucinar (inventar datos o fuentes) | **Fuentes:** solo responde con lo que está en la información de los TL y en Moodle, e indica de cuál salió. Si no está, dice "No encuentro eso en la información del clan".
+Tiene fecha de corte | **Fuentes:** no usa lo que "sabe" por su cuenta; las fechas y horarios salen siempre de Moodle o de los TL. Se indica la fecha de la última actualización de la información. |
+Puede repetir sesgos | **Control humano:** no opina sobre personas, no da notas ni evalúa. Esos temas se redirigen al TL. 
+Responde distinto a la misma pregunta | **Avisos:** da respuestas cortas, con el mismo formato y citando la fuente.
+
+Diseño del asistente: fuentes, avisos y control humano
+
+- **Fuentes:** responde solo con documentos del clan (TL y Moodle) y dice de dónde sale cada dato.
+- **Avisos:** advierte que puede equivocarse y que la información depende de la última actualización.
+- **Control humano:** las decisiones, las notas y las excepciones las toman el TL nunca el asistente.
