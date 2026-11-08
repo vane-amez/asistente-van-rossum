@@ -1,0 +1,1 @@
+Idea de asistente de conocimiento para resolver las dudas del entrenamiento del clan Van Rossum: horarios, temas y entregas.
