@@ -73,10 +73,40 @@
                     Moodle, y dice de dónde sale.</li>
                 <li><strong>Tiene una fecha de corte.</strong> Las fechas y horarios salen siempre de Moodle o de los
                     TL, no de lo que «sabe» por su cuenta.</li>
-                <li><strong>Puede repetir sesgos.</strong> No opina sobre personas ni da notas; eso lo decide el TL.</li>
+                <li><strong>Puede repetir sesgos.</strong> No opina sobre personas ni da notas; eso lo decide el TL.
+                </li>
                 <li><strong>Puede responder distinto a la misma pregunta.</strong> Da respuestas cortas, con el mismo
                     formato, y recomienda confirmar con el TL lo importante, como una fecha de entrega.</li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Diseño: fuentes, avisos y control humano</h2>
+            <ul>
+                <li><strong>Fuentes:</strong> responde solo con documentos del clan y cita de dónde sale cada dato.</li>
+                <li><strong>Avisos:</strong> advierte que puede equivocarse y que depende de la última actualización.
+                </li>
+                <li><strong>Control humano:</strong> las decisiones, las notas y las excepciones las toman el TL.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formato, plantilla y pruebas</h2>
+            <p><strong>Formato de respuesta:</strong> máximo tres viñetas y una línea final con la fuente (TL o Moodle).
+                Esto hace la respuesta fácil de leer y, más adelante, fácil de procesar con código.</p>
+            <p><strong>Plantilla fija:</strong> el asistente usa siempre las mismas instrucciones, con un espacio
+                <code>{pregunta}</code> que cambia en cada consulta.
+            </p>
+            <p><strong>Cinco casos de prueba:</strong> dos preguntas frecuentes, una ambigua, una con dato faltante y
+                una fuera de tema.</p>
+            <p>En cada respuesta se revisan cuatro criterios:</p>
+            <ul>
+                <li>La información es correcta y coincide con el material.</li>
+                <li>Llega en el formato que pide la plantilla.</li>
+                <li>Si falta el dato, lo dice en lugar de inventarlo.</li>
+                <li>Si la pregunta es de otro tema, la rechaza con amabilidad.</li>
+            </ul>
+            <p><em>Si algo falla, se ajusta el prompt y se prueba de nuevo con los mismos casos.</em></p>
         </section>
 
         <section>
